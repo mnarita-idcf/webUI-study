@@ -5,12 +5,16 @@
     <title>HTMLとCSS3で作るWebサイト</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="container">
       <ul class="menu">
-        <li class="brand">
-        </li>
+        <a href="https://codeprep.jp/featured" target=”_blank”>
+          <li class="brand">
+          </li>
+        </a>
         <li class="menu-item">
           <i class="fa fa-list-ul" aria-hidden="true"></i>ブック一覧
         </li>
@@ -62,6 +66,34 @@
       <div class="toggle-switch green">
         <input type="checkbox" id="toggle3" class="button" />
         <label for="toggle3" class="border">toggle button</label>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="header">
+        HINT
+        <i class="fa fa-2x fa-angle-down header-icon"></i>
+      </div>
+      <div class="body">このブックでは、jQueryとCSS3を利用して簡単なアコーディオンパネルを作成します。
+アコーディオンの開閉状態の変化に応じてアイコンを回転させるアニメーションを追加します。</div>
+    </div>
+    <div class="accordion gold">
+      <div class="header">
+        HINT
+        <i class="header-icon fa fa-2x fa-angle-down" aria-hidden="true"></i>
+      </div>
+      <div class="body">HINT</div>
+    </div>
+
+    <div class="accordion green">
+      <div class="header">
+        HINT
+        <i class="header-icon fa fa-2x fa-angle-down" aria-hidden="true"></i>
+      </div>
+      <div class="body">
+        <div class="backdrop">
+          <div class="spinner"></div>
+        </div>
       </div>
     </div>
   </body>
